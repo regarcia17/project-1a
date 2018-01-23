@@ -1,0 +1,56 @@
+h1{
+   color: fuchsia;
+    font-size: 50px;
+    font-family: 'Sedgwick Ave', cursive;
+    text-transform: uppercase;
+    text-align: center;
+}
+/* Pseudo-element */
+h1::before{
+    content: "~";
+}
+h1::after{
+    content: "~";
+}
+
+body{
+    font-family: 'Cabin', sans-serif;
+}
+
+.button{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    
+    display: inline-block;
+    border: solid 2px purple;
+    border-radius: 4px;
+    padding: 10px;
+    color: purple;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: lightpink;
+    bottom: 10px;
+    left: 10px;
+    transition: .5s all;
+}
+
+#connect{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: lightcoral;
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+}
+
+#connect ul{
+    position: absolute;
+    top: 75px;
+    left: 70px;
+    padding: 0;
+    margin: 0;
+}
